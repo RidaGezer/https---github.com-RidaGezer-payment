@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Payment page</title>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="containerleft">
+        <span class="spaninformation">Information</span>
+        <div class="container_information">
+          <div class="inputbox">
+            <span class="paymentspan">Name</span>
+            <input class="inputpayment" type="text" placeholder="name" />
+          </div>
+          <div class="inputbox">
+            <span class="paymentspan">E-mail</span>
+            <input class="inputpayment" type="text" placeholder="name" />
+          </div>
+          <div class="inputbox">
+            <span class="paymentspan">Phone number</span>
+            <input class="inputpayment" type="text" placeholder="name" />
+          </div>
+          <div class="inputbox">
+            <span class="paymentspan">Streetname</span>
+            <input class="inputpayment" type="text" placeholder="name" />
+          </div>
+          <div class="inputbox">
+            <span class="paymentspan">City</span>
+            <input class="inputpayment" type="text" placeholder="name" />
+          </div>
+          <div class="inputbox">
+            <span class="paymentspan">Zip code</span>
+            <input class="inputpayment" type="text" placeholder="name" />
+          </div>
+        </div>
+        <span class="spaninformation">Delivery option</span>
+        <div class="container_delivery">
+          <span class="spandelivery">Date</span>
+          <input class="inputdelivery" type="date" />
+          <span class="spandelivery">Note</span>
+          <input class="inputdelivery" type="text" />
+        </div>
+        <span class="spaninformation">Payment option</span>
+
+        <div class="container_payment">
+          <a href="#">
+            <img class="imgpayment" src="./img/ideal2.png" alt="" />
+          </a>
+          <a href="#">
+            <img class="imgpayment" src="./img/klarna_pink.avif" alt="" />
+          </a>
+          <a href="#">
+            <img class="imgpayment" src="./img/master.png" alt="" />
+          </a>
+          <a href="#">
+            <img class="imgpayment" src="./img/paypal.avif" alt="" />
+          </a>
+          <a href="#">
+            <img
+              class="imgpayment"
+              src="./img/Font_Awesome_5_brands_cc-apple-pay.svg.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="containerright">
+        <section>
+          <div class="container">
+             <div class="cart">
+                <div class="col-md-12 col-lg-10 mx-auto">
+                   <div class="cart-item">
+                      <div class="row">
+                         <div class="col-md-7 center-item">
+                            <img src="./img/razertoetsenbord.avif" alt="">
+                            <h5>Razer toetsenbord( $100 )</h5>
+                         </div>
+    
+                         <div class="col-md-5 center-item">
+                            <div class="input-group number-spinner">
+                               <button id="phone-minus" class="btn btn-default"><i class="fas fa-minus">-</i></button>
+                               <input id="phone-number" type="number" min="0" class="form-control text-center" value="1">
+                               <button id="phone-plus" class="btn btn-default"><i class="fas fa-plus">+</i></button>
+                            </div>
+                            <h5>$ <span id="phone-total">100</span> </h5>
+                            <img src="./img/removesvgg.png" alt="" class="remove-item">
+                         </div>
+                      </div>
+                   </div>
+    
+                   <div class="cart-item">
+                      <div class="row">
+                         <div class="col-md-7 center-item mx-auto">
+                            <img src="./img/razertoetsenbord.avif" alt="">
+                            <h5>Razer toetsenbord( $100 )</h5>
+                         </div>
+                         <div class="col-md-5 center-item">
+                            <div class="input-group number-spinner">
+                               <button id="case-minus" class="btn btn-default"><i class="fas fa-minus">-</i></button>
+                               <input id="case-number" type="number" min="0" class="form-control text-center" value="1">
+                               <button  id="case-plus" class="btn btn-default"><i class="fas fa-plus">+</i></button>
+    
+                            </div>
+                            <h5>$ <span id="case-total">59</span> </h5>
+                            <img src="./img/removesvgg.png" alt="" class="remove-item">
+                         </div>
+                      </div>
+                   </div>
+    
+                   <div class="cart-item">
+                      <div class="row g-2">
+    
+                         <div class="col-6">
+                            <h5>Subtotal: </h5>
+                            <h5>Tax:</h5>
+                            <h5>Total:</h5>
+                         </div>
+    
+                         <div class="col-6 status">
+                            <h5>$<span id="sub-total">1,278</span></h5>
+                            <h5>$<span id="tax-amount">0</span></h5>
+                            <h5>$<span id="total-price">1,278</span></h5>
+                         </div>
+                         
+                      </div>
+                   </div>
+                   <div class="col-md-12 pt-4 pb-4">
+                      <button type="button" class="btn btn-success check-out">Check Out</button>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+      </div>
+    </div>
+<script src="./script.js"></script>  </body>
+</html>
